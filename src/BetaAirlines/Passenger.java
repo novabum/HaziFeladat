@@ -1,12 +1,10 @@
 package BetaAirlines;
 
 public class Passenger {
-    private String name;
-    private Integer passportID;
+    private final String name;
 
     public Passenger(String name, Integer passportID) {
         this.name = name;
-        this.passportID = passportID;
     }
 
     public String getName() {
