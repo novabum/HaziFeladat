@@ -10,7 +10,7 @@ public class Main {
 
         System.out.println(salaryManager.getEmployeeByName("Sanyi").calculateSalary()); //tőle levontuk a bónuszt
         System.out.println(salaryManager.getEmployeeByName("Béci").calculateSalary()); //dupla bónuszt kap
-        System.out.println(salaryManager.getEmployeeByName("FickóMan").calculateSalary()); //ő megkapta a bónuszt
+        System.out.println(salaryManager.getEmployeeByName("FickóMan").calculateSalary()); //megkapta a bónuszt
 
     }
 }

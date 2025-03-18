@@ -13,6 +13,4 @@ public class SalaryManager {
     public Employee getEmployeeByName(String name){
         return employeeList.stream().filter(e -> e.getName().equals(name)).findFirst().orElse(null);
     }
-
-
 }

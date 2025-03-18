@@ -11,10 +11,8 @@ public class FullTime extends EmployeeData implements Employee{
         return baseSalary + bonus;
     }
 
-
     @Override
     public String getName() {
         return name;
     }
-
 }

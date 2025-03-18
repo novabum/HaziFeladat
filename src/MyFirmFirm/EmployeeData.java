@@ -12,5 +12,4 @@ abstract class EmployeeData {
         this.baseSalary = baseSalary;
         this.bonus = bonus;
     }
-
 }

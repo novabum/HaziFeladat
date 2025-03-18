@@ -11,7 +11,6 @@ public class PartTime extends EmployeeData implements Employee {
         return baseSalary + (bonus * 2);
     }
 
-
     @Override
     public String getName() {
         return name;
