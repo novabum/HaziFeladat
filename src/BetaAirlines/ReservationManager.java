@@ -41,7 +41,7 @@ public class ReservationManager {
     }
 
 
-    public void itsStringyBitch() {
+    public void justPrint() {
         for (Passenger passenger : reservationsMap.keySet()) {
             System.out.println("Name: " + passenger.getName());
             System.out.println("reservations: ");
