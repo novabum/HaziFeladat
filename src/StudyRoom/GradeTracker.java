@@ -23,8 +23,7 @@ public class GradeTracker {
             System.out.println("New " + schoolClass + " grade added for " + student.getName());
         } else {
             Map<ClassEnum, List<Integer>> classGrades = new HashMap<>();
-            classGrades.put(schoolClass, new ArrayList<>());
-            grades.put(student, classGrades);
+            grades.get(student).put(schoolClass, new ArrayList<>());
             grades.get(student).get(schoolClass).add(grade);
         }
     }

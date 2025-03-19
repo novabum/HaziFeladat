@@ -13,6 +13,9 @@ public class Main {
     gradeTracker.newGradeForStudent(st1, ClassEnum.Math, 1);
     gradeTracker.newGradeForStudent(st1, ClassEnum.Math, 3);
     gradeTracker.newGradeForStudent(st1, ClassEnum.Math, 2);
+    gradeTracker.newGradeForStudent(st1, ClassEnum.French, 1);
+    gradeTracker.newGradeForStudent(st1, ClassEnum.Biology, 4);
+    gradeTracker.newGradeForStudent(st1, ClassEnum.Biology, 3);
 
     gradeTracker.printStudentGradesByName("Jani");
 
