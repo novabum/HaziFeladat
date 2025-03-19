@@ -9,8 +9,6 @@ public class ReservationManager {
     Map<Passenger, List<Reservation>> reservationsMap = new HashMap<>();
 
 
-    // vaaaagy
-
     public void addReservationToList(Passenger passenger, Reservation reservation) {
         if (!reservationsMap.containsKey(passenger)) {
             System.out.println("User does not exist. Adding " + passenger.getName() + "... Done");
@@ -31,6 +29,7 @@ public class ReservationManager {
         deleteUserIfNoReservationsLeft(passenger);
     }
 
+    //ha nincs több reservation, töröljük a usert.
     private void deleteUserIfNoReservationsLeft(Passenger passenger) {
         if (!reservationsMap.containsKey(passenger)) {
             //hibakezelés miatt, ugyanis, isEmpty elfossa magát, ha nincs ilyen passenger
@@ -40,7 +39,6 @@ public class ReservationManager {
         }
     }
 
-
     public void justPrint() {
         for (Passenger passenger : reservationsMap.keySet()) {
             System.out.println("Name: " + passenger.getName());
@@ -49,7 +47,6 @@ public class ReservationManager {
         }
     }
 
-
     public void addReservationToListAlternateVersion(Passenger passenger, Reservation reservation) {
         //megnézem, hogy van-e a passengernek már foglalási listája, ha nincs készítek újat.
         reservationsMap.computeIfAbsent(passenger, k -> new ArrayList<>()).add(reservation);
@@ -57,7 +54,7 @@ public class ReservationManager {
         //ha a passenger present, akkor csak hozzáadjuk reservationt.
         //HA a key tutira létezik, akkor ez is jó:
         // reservationsMap.get(passenger).add(reservation);
-        //csellolom egy másik verzióban
+        //csekkolom egy másik verzióban
 //
     }
 
@@ -66,6 +63,6 @@ public class ReservationManager {
             V.remove(reservation);
             return V;
         });
-        //!!! szép, de hogyan lehetne megoldani a user törlést és az üzenetek dobálását ugyanitt?
+        //!!! szép, de hogyan lehetne megoldani a user törlést és az üzenetek dobálását ugyanígy?
     }
 }
