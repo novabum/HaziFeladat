@@ -21,7 +21,7 @@ public class ReservationManager {
         System.out.println("Reservation added");
     }
 
-    //Ha van olyan reservation törli, ha utolsó reservation volt, usert is törli. Ez két külön method lesz itt
+    //Ha van olyan reservation, akkor törli. Ha utolsó reservation volt, usert is törli. Ez két külön method lesz
     public void removeReservationFromList(Passenger passenger, Reservation reservation) {
         if (reservationsMap.containsKey(passenger)) {
             //a .remove simán egész key-t is törölné hmmm...

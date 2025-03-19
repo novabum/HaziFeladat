@@ -20,6 +20,7 @@ public class Main {
         reservationManager.addReservationToList(pass1, res4);
         reservationManager.addReservationToList(pass2, res3);
         reservationManager.addReservationToList(pass2, res4);
+
         reservationManager.itsStringyBitch(); //print
         //Új ötlet: meg kellen akadályozni, hogy egy key alatt ugyanaz a reservation kétszer szerepelhessen
         //mapbe kellene tenni a reservation-öket is? Map<utas, Map<Járatszám, List<mindenmás>>>
@@ -31,6 +32,7 @@ public class Main {
         reservationManager.removeReservationFromList(pass2, res4);
 //        reservationManager.removeReservationFromList(pass2, res4); nullpointerexception
         reservationManager.removeReservationFromList(pass2, res4); //javítva
+
         reservationManager.itsStringyBitch(); //print
     }
 }
