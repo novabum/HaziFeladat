@@ -1,9 +1,17 @@
 package TaskManager;
 
-public interface TaskInterface {
+import java.time.LocalDate;
 
-    //    Ha nem Done és ma > dutedate -> Status -> OverDue
-    void updateStatus();
-    void updateStatus(Status status);
+public interface TaskInterface {
+    Integer getID();
+    String getTitle();
+    LocalDate getDueDate();
+    void setStatus(Enum<Status> status);
+    Enum<Status> getStatus();
+    Integer getId();
+
+
+
+
 
 }

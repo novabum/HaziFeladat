@@ -1,4 +1,20 @@
 package TaskManager;
 
-public interface User {
+public class User extends UserData implements UserInterface {
+
+
+    public User(String name, String email) {
+        super(name, email);
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String getEmail() {
+        return email;
+    }
+
 }
