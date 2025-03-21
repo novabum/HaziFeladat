@@ -47,5 +47,4 @@ public class GradeTracker {
         } else System.out.println("No student can be found by that name.");
     }
 
-
 }

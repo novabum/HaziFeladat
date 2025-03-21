@@ -18,13 +18,13 @@ public class Main {
         gradeTracker.newGradeForStudent(st1, ClassEnum.BIOLOGY, 4);
         gradeTracker.newGradeForStudent(st1, ClassEnum.BIOLOGY, 3);
 
-        gradeTracker.newGradeForStudent(st2, ClassEnum.BIOLOGY, 4);
-        gradeTracker.newGradeForStudent(st2, ClassEnum.FRENCH, 4);
-        gradeTracker.newGradeForStudent(st2, ClassEnum.MATH, 1);
-        gradeTracker.newGradeForStudent(st2, ClassEnum.MATH, 3);
-        gradeTracker.newGradeForStudent(st2, ClassEnum.MATH, 2);
+        gradeTracker.newGradeForStudent(st2, ClassEnum.BIOLOGY, 1);
         gradeTracker.newGradeForStudent(st2, ClassEnum.FRENCH, 1);
-        gradeTracker.newGradeForStudent(st2, ClassEnum.BIOLOGY, 4);
+        gradeTracker.newGradeForStudent(st2, ClassEnum.MATH, 2);
+        gradeTracker.newGradeForStudent(st2, ClassEnum.MATH, 1);
+        gradeTracker.newGradeForStudent(st2, ClassEnum.MATH, 1);
+        gradeTracker.newGradeForStudent(st2, ClassEnum.FRENCH, 5);
+        gradeTracker.newGradeForStudent(st2, ClassEnum.BIOLOGY, 2);
         gradeTracker.newGradeForStudent(st2, ClassEnum.BIOLOGY, 3);
 
         gradeTracker.printStudentGradesByName("Jani");
