@@ -2,8 +2,8 @@ package AnimalKingdom2;
 
 public class Parrot extends Animal implements MovementType {
 
-    public Parrot(String name) {
-        super(name, new Winged());
+    public Parrot() {
+        super(new Winged());
     }
 
     @Override
@@ -13,6 +13,6 @@ public class Parrot extends Animal implements MovementType {
 
     @Override
     public void speak() {
-
+        System.out.println("Arrr, I'm a pirate");
     }
 }

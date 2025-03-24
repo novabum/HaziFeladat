@@ -1,12 +1,10 @@
 package AnimalKingdom2;
 
 public abstract class Animal {
-    protected String name;
     protected MovementType movementType;
 
 
-    public Animal(String name, MovementType movementType) {
-        this.name = name;
+    public Animal(MovementType movementType) {
         this.movementType = movementType;
     }
 

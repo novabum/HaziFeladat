@@ -2,8 +2,8 @@ package AnimalKingdom2;
 
 public class Bat extends Animal {
 
-    public Bat(String name) {
-        super(name, new Winged());
+    public Bat() {
+        super(new Winged());
     }
 
     @Override
