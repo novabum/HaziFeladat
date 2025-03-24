@@ -13,8 +13,4 @@ public abstract class Animal {
     }
 
     public abstract void speak();
-
-    public MovementType getMovementType() {
-        return movementType;
-    }
 }

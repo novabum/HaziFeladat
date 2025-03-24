@@ -13,7 +13,7 @@ public class Main {
         var seal1 = new Seal();
         seal1.speak();
         seal1.move();
-        System.out.println("-");
+        System.out.println("\nHelyes kezelés:\n");
 
         var wingedHandler = new WingedHandler();
         var landHandler = new LandHandler();
@@ -23,12 +23,12 @@ public class Main {
         aquaticHandler.handle(seal1);
 
 
-        System.out.println("Nem tudják kezelni\n");
+        System.out.println("\nNem tudják kezelni:\n");
         wingedHandler.handle(dog1);
         aquaticHandler.handle(bat1);
         landHandler.handle(seal1);
 
-        System.out.println("MaserHandler teszt:\n");
+        System.out.println("\nMasterHandler teszt:\n");
         var masterhandler = new MasterHandler();
         masterhandler.handle(dog1);
         masterhandler.handle(seal1);
