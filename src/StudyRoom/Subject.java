@@ -1,6 +1,6 @@
 package StudyRoom;
 
-public enum ClassEnum {
+public enum Subject {
     BIOLOGY, FRENCH, ENGLISH, MATH, LITERATURE;
     //math not even once
 }

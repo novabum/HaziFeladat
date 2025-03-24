@@ -9,23 +9,23 @@ public class Main {
 
         GradeTracker gradeTracker = new GradeTracker();
 
-        gradeTracker.newGradeForStudent(st1, ClassEnum.BIOLOGY, 4);
-        gradeTracker.newGradeForStudent(st1, ClassEnum.FRENCH, 4);
-        gradeTracker.newGradeForStudent(st1, ClassEnum.MATH, 1);
-        gradeTracker.newGradeForStudent(st1, ClassEnum.MATH, 3);
-        gradeTracker.newGradeForStudent(st1, ClassEnum.MATH, 2);
-        gradeTracker.newGradeForStudent(st1, ClassEnum.FRENCH, 1);
-        gradeTracker.newGradeForStudent(st1, ClassEnum.BIOLOGY, 4);
-        gradeTracker.newGradeForStudent(st1, ClassEnum.BIOLOGY, 3);
+        gradeTracker.newGradeForStudent(st1, Subject.BIOLOGY, 4);
+        gradeTracker.newGradeForStudent(st1, Subject.FRENCH, 4);
+        gradeTracker.newGradeForStudent(st1, Subject.MATH, 1);
+        gradeTracker.newGradeForStudent(st1, Subject.MATH, 3);
+        gradeTracker.newGradeForStudent(st1, Subject.MATH, 2);
+        gradeTracker.newGradeForStudent(st1, Subject.FRENCH, 1);
+        gradeTracker.newGradeForStudent(st1, Subject.BIOLOGY, 4);
+        gradeTracker.newGradeForStudent(st1, Subject.BIOLOGY, 3);
 
-        gradeTracker.newGradeForStudent(st2, ClassEnum.BIOLOGY, 1);
-        gradeTracker.newGradeForStudent(st2, ClassEnum.FRENCH, 1);
-        gradeTracker.newGradeForStudent(st2, ClassEnum.MATH, 2);
-        gradeTracker.newGradeForStudent(st2, ClassEnum.MATH, 1);
-        gradeTracker.newGradeForStudent(st2, ClassEnum.MATH, 1);
-        gradeTracker.newGradeForStudent(st2, ClassEnum.FRENCH, 5);
-        gradeTracker.newGradeForStudent(st2, ClassEnum.BIOLOGY, 2);
-        gradeTracker.newGradeForStudent(st2, ClassEnum.BIOLOGY, 3);
+        gradeTracker.newGradeForStudent(st2, Subject.BIOLOGY, 1);
+        gradeTracker.newGradeForStudent(st2, Subject.FRENCH, 1);
+        gradeTracker.newGradeForStudent(st2, Subject.MATH, 2);
+        gradeTracker.newGradeForStudent(st2, Subject.MATH, 1);
+        gradeTracker.newGradeForStudent(st2, Subject.MATH, 1);
+        gradeTracker.newGradeForStudent(st2, Subject.FRENCH, 5);
+        gradeTracker.newGradeForStudent(st2, Subject.BIOLOGY, 2);
+        gradeTracker.newGradeForStudent(st2, Subject.BIOLOGY, 3);
 
         gradeTracker.printStudentGradesByName("Jani");
         gradeTracker.printStudentGradesByName("Bence");

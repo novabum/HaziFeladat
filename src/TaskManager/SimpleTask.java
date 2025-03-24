@@ -30,8 +30,8 @@ public class SimpleTask extends Task implements TaskInterface {
     }
 
     @Override
-    public Integer getId() {
-        return id;
+    public void listUnassignedTasks() {
+
     }
 
     @Override

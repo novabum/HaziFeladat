@@ -65,4 +65,8 @@ public class ReservationManager {
         });
         //!!! szép, de hogyan lehetne megoldani a user törlést és az üzenetek dobálását ugyanígy?
     }
+
+    public void listPassangersOnFlight(Integer flightNumber){
+
+    }
 }

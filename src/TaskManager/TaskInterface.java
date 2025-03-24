@@ -8,7 +8,7 @@ public interface TaskInterface {
     LocalDate getDueDate();
     void setStatus(Enum<Status> status);
     Enum<Status> getStatus();
-    Integer getId();
+    void listUnassignedTasks();
 
 
 

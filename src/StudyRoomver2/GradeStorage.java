@@ -8,9 +8,11 @@ import java.util.Map;
 public class GradeStorage {
     private final Map<ClassEnum, List<Integer>> gradeStorage;
 
+
     public GradeStorage() {
         gradeStorage = new HashMap<>();
     }
+
 
     public void addClassAndGrade(ClassEnum schoolClass, Integer grade) {
         if (!gradeStorage.containsKey(schoolClass)) {

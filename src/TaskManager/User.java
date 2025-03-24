@@ -12,9 +12,4 @@ public class User extends UserData implements UserInterface {
         return name;
     }
 
-    @Override
-    public String getEmail() {
-        return email;
-    }
-
 }

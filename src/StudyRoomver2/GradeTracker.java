@@ -11,12 +11,12 @@ public class GradeTracker {
             studentGrades.addGradeToExistingStudent(student, schoolClass, grade);
     }
 
-    public void printStudentGradesByName(String studentName) {
-        if (studentGrades.weHaveStudentNamed(studentName)){
-
-        } else System.out.println("Student cannot be found");
-
-    }
+//    public void printStudentGradesByName(String studentName) {
+//        if (studentGrades.weHaveStudentNamed(studentName)){
+//
+//        } else System.out.println("Student cannot be found");
+//
+//    }
 
     //    public void printStudentGradesByName(String studentName) {
 //        Student student = grades.keySet().stream().filter(e -> e.getName().equals(studentName)).findFirst().orElse(null);

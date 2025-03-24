@@ -25,7 +25,7 @@ public class StudentGrades {
         studentGrades.get(student).addClassAndGrade(schoolclass, grade);
     }
 
-    public boolean weHaveStudentNamed(String studentName) {
+    public boolean isStudentNamedExist(String studentName) {
         Student student = studentGrades.keySet().stream()
                 .filter(st -> st.getName().equals(studentName))
                 .findFirst()

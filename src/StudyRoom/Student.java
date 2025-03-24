@@ -1,5 +1,12 @@
 package StudyRoom;
 
+//feladat 3:
+//hallgatók vizsgaeredmény rendszer
+//hallgató: név, id
+//vizsgainfó: tantárgy, score
+//        Tracker nyilvántartja, melyik kié.
+
+
 public class Student {
     private String name;
     private Integer id;
