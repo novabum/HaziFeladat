@@ -8,6 +8,6 @@ public class Bat extends Animal {
 
     @Override
     public void speak() {
-        System.out.println("I AM BATMAN");
+        System.out.println("Ich bin Batman");
     }
 }

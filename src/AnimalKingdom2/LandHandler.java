@@ -7,7 +7,5 @@ public class LandHandler implements Handle{
         if (animal.movementType instanceof Land) {
             System.out.println("I can handle land animals");
         } else System.out.println("This is not a land animal. I can't handle it");
-        }
-
     }
 }

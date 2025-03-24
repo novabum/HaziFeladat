@@ -7,6 +7,6 @@ public class WingedHandler implements Handle{
         if(animal.movementType instanceof Winged) {
             System.out.println("I handle winged animals");
         }
-        else System.out.println("Cannot handle this Animal, as it is not winged.");
+        else System.out.println("Cannot handle this Animal, as it has no wings.");
     }
 }
