@@ -1,7 +1,7 @@
 package AnimalKingdom;
 
-public interface Winged {
-    void fly();
-    String getName();
-
+public abstract class Winged extends Animal {
+    private String wingedName;
+    private Integer wingNum;
+    protected abstract String getName();
 }

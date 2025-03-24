@@ -1,6 +1,6 @@
 package AnimalKingdom;
 
-public class Dog extends LandAnimals implements Animal, LandAnimal{
+public class Dog extends Animal implements LandAnimal{
     @Override
     public void speak() {
         System.out.println("Bark");

@@ -1,5 +1,5 @@
-package AnimalKingdom;
-
-public interface Aquatic {
-    void swim();
-}
+//package AnimalKingdom;
+//
+//public interface Aquatic {
+//    void swim();
+//}

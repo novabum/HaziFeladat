@@ -38,7 +38,7 @@ public class GradeTracker {
     //! exceptionoket nem kezeltem le.
     public void printStudentGradesByName(String studentName) {
         Student student = grades.keySet().stream().filter(e -> e.getName().equals(studentName)).findFirst().orElse(null);
-        if (grades.containsKey(student)) {
+        if (student != null && grades.containsKey(student)) {
             Map<ClassEnum, List<Integer>> studentGrades = grades.get(student);
             System.out.println("Name: " + student.getName());
             for (Map.Entry<ClassEnum, List<Integer>> entry : studentGrades.entrySet()) {

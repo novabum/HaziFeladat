@@ -1,6 +1,6 @@
 package AnimalKingdom;
 
-public class Bat extends WingedAnimals implements Winged, Animal {
+public class Bat extends Winged implements WingedAnimal {
     private String name;
 
     public Bat(String name) {

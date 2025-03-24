@@ -1,6 +1,6 @@
 package AnimalKingdom;
 
-public interface Animal {
-    void speak();
-    String getName();
+public abstract class Animal {
+    String name;
+    abstract void speak();
 }

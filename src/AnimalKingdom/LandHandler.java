@@ -1,9 +1,8 @@
 package AnimalKingdom;
 
-public class LandHandler extends MasterAnimalHandler<LandAnimals> {
+public class LandHandler extends AnimalHandler<Land> {
 
     @Override
-    public void handleAnimal(LandAnimals animal) {
-        super.handleAnimal(animal);
-    }
+    public void handleAnimal(Land animal) {
+        System.out.println("LandHandler only handles" + animal.getName());    }
 }

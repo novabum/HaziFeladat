@@ -1,7 +1,7 @@
 package AnimalKingdom;
 
 
-public class Cat extends LandAnimals implements Animal, LandAnimal{
+public class Cat extends Land implements LandAnimal{
 
 
     @Override

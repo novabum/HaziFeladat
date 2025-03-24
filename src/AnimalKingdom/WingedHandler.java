@@ -1,9 +1,8 @@
 package AnimalKingdom;
 
-public class WingedHandler extends MasterAnimalHandler<WingedAnimals> {
+public class WingedHandler extends AnimalHandler<Winged> {
 
     @Override
-    public void handleAnimal(WingedAnimals animal) {
-        System.out.println("WingedHandler drinks RedBull: " + animal.getName());
-    }
+    public void handleAnimal(Winged wingedAnimal) {
+        System.out.println("WingedHandler can handle"+ wingedAnimal.getName());    }
 }
