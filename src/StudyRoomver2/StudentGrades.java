@@ -1,7 +1,6 @@
 package StudyRoomver2;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class StudentGrades {
@@ -15,14 +14,14 @@ public class StudentGrades {
         return studentGrades.containsKey(student);
     }
 
-    public void addStudentAndGrades(Student student, ClassEnum schoolClass, Integer grade) {
+    public void addStudentAndGrades(Student student, SubjectEnum subjectEnum, Integer grade) {
         GradeStorage gradeStorage = new GradeStorage();
-        gradeStorage.addClassAndGrade(schoolClass, grade);
+        gradeStorage.addSubjectAndGrade(subjectEnum, grade);
         studentGrades.put(student, gradeStorage);
     }
 
-    public void addGradeToExistingStudent(Student student, ClassEnum schoolclass, Integer grade) {
-        studentGrades.get(student).addClassAndGrade(schoolclass, grade);
+    public void addGradeToExistingStudent(Student student, SubjectEnum subjectEnum, Integer grade) {
+        studentGrades.get(student).addSubjectAndGrade(subjectEnum, grade);
     }
 
     public boolean isStudentNamedExist(String studentName) {
@@ -31,5 +30,13 @@ public class StudentGrades {
                 .findFirst()
                 .orElse(null);
         return student != null;
+    }
+
+    public GradeStorage getClassesOfStudent(String studentName) {
+        Student thisStudent = studentGrades.keySet().stream()
+                .filter(e -> e.getName().equals(studentName))
+                .findFirst()
+                .orElse(null);
+        return studentGrades.get(thisStudent);
     }
 }

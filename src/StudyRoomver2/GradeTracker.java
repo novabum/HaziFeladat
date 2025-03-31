@@ -3,20 +3,22 @@ package StudyRoomver2;
 public class GradeTracker {
 
     StudentGrades studentGrades = new StudentGrades();
+    GradeStorage gradeStorage = new GradeStorage();
 
-    public void newGradeForStudent(Student student, ClassEnum schoolClass, Integer grade) {
+    public void newGradeForStudent(Student student, SubjectEnum subjectEnum, Integer grade) {
         if (!studentGrades.existingStudent(student)) {
-            studentGrades.addStudentAndGrades(student, schoolClass, grade);
+            studentGrades.addStudentAndGrades(student, subjectEnum, grade);
         } else
-            studentGrades.addGradeToExistingStudent(student, schoolClass, grade);
+            studentGrades.addGradeToExistingStudent(student, subjectEnum, grade);
     }
 
-//    public void printStudentGradesByName(String studentName) {
-//        if (studentGrades.weHaveStudentNamed(studentName)){
-//
-//        } else System.out.println("Student cannot be found");
-//
-//    }
+    public void printStudentGradesByName(String studentName) {
+        if (studentGrades.isStudentNamedExist(studentName)){
+            System.out.println(studentName +"'s grades are as follows:");
+            gradeStorage.printClassesAndGrades(studentGrades.getClassesOfStudent(studentName));
+        } else System.out.println("Student cannot be found");
+
+    }
 
     //    public void printStudentGradesByName(String studentName) {
 //        Student student = grades.keySet().stream().filter(e -> e.getName().equals(studentName)).findFirst().orElse(null);

@@ -6,19 +6,29 @@ import java.util.List;
 import java.util.Map;
 
 public class GradeStorage {
-    private final Map<ClassEnum, List<Integer>> gradeStorage;
-
+    private final Map<SubjectEnum, List<Integer>> gradeStorage;
 
     public GradeStorage() {
         gradeStorage = new HashMap<>();
     }
 
+    public Map<SubjectEnum, List<Integer>> getGradeStorage() {
+        return gradeStorage;
+    }
 
-    public void addClassAndGrade(ClassEnum schoolClass, Integer grade) {
-        if (!gradeStorage.containsKey(schoolClass)) {
-            gradeStorage.put(schoolClass, new ArrayList<>());
-            gradeStorage.get(schoolClass).add(grade);
-        } else gradeStorage.get(schoolClass).add(grade);
+    public void addSubjectAndGrade(SubjectEnum subjectEnum, Integer grade) {
+        if (!gradeStorage.containsKey(subjectEnum)) {
+            gradeStorage.put(subjectEnum, new ArrayList<>());
+            gradeStorage.get(subjectEnum).add(grade);
+        } else gradeStorage.get(subjectEnum).add(grade);
+    }
+
+    public void printClassesAndGrades(GradeStorage storageOfStudent){
+        Map<SubjectEnum, List<Integer>> storedClassesAndGrades = storageOfStudent.getGradeStorage();
+        for (SubjectEnum subject : storedClassesAndGrades.keySet()){
+            System.out.println(subject.toString());
+            storedClassesAndGrades.get(subject).forEach(System.out::println);
+        }
     }
 
 }
